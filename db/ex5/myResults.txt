@@ -1,0 +1,69 @@
+public=> \i querya.sql 
+ pname  
+--------
+ Idan
+ Ido
+ Iris
+ Michal
+(4 rows)
+
+
+public=> \i queryb.sql 
+   hname    
+------------
+ Basketball
+ Swimming
+(2 rows)
+
+
+public=> \i queryc.sql 
+ pname  
+--------
+ Iris
+ Michal
+(2 rows)
+
+
+public=> \i queryd.sql 
+   hname    
+------------
+ Basketball
+ Crowling
+ Roller
+(3 rows)
+
+
+
+public=> \i querye.sql 
+  pname  
+---------
+ Dvir
+ Idan
+ Ido
+ Iris
+ Michal
+ Shmulik
+(6 rows)
+
+
+public=> \i queryf.sql 
+  hname   
+----------
+ Crowling
+ Swimming
+(2 rows)
+
+
+public=> \i queryg.sql 
+ hnum | p2name  | p3name 
+------+---------+--------
+  100 | Shmulik | Alon
+  200 | Idan    | Gadi
+  300 | Dvir    | Iris
+  400 | Meir    | Meir
+  600 | Michal  | Iris
+  700 | Shmulik | Idan
+  900 | Iris    | Rozen
+ 1000 | Dvir    | Baby
+(8 rows)
+
