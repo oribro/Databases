@@ -1,0 +1,3 @@
+/** results of Players rating and Players inactive without 'God' (before using q5.sql) */
+pupil rating: [0, 2, -2, 2, 1, 2, -1, -1, -3]
+pupil inactive: [0, 0, 0, 0, 0, 0, 0, 0, 0]

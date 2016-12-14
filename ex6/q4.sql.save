@@ -1,0 +1,16 @@
+^XCREATE OR REPLACE FUNCTION fourthq() RETURNS TRIGGER AS $$
+DECLARE
+loc record;
+BEGIN
+SELECT * INTO loc FROM Location; 
+IF NOT FOUND THEN 
+INSERT INTO Location values(default, 'Always Available');
+END IF;
+return null;
+END
+$$ LANGUAGE PLPGSQL;
+
+CREATE TRIGGER fourthqtrig
+AFTER DELETE ON Location
+FOR EACH STATEMENT
+EXECUTE PROCEDURE fourthq();

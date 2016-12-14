@@ -1,0 +1,177 @@
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE FUNCTION
+CREATE TRIGGER
+CREATE FUNCTION
+CREATE TRIGGER
+CREATE FUNCTION
+CREATE TRIGGER
+CREATE FUNCTION
+CREATE TRIGGER
+CREATE FUNCTION
+INSERT 4635994 1
+INSERT 4635995 1
+INSERT 4635996 1
+INSERT 4635997 1
+INSERT 4635998 1
+INSERT 4635999 1
+INSERT 4636000 1
+INSERT 4636001 1
+INSERT 4636002 1
+INSERT 4636003 1
+ pid | firstname | lastname | nickname | rating | inactive
+-----+-----------+----------+----------+--------+----------
+   1 | AAA       | AA       | A        |      0 |        0
+   2 | BBB       | BB       | B        |      0 |        0
+   3 | CCC       | CC       | C        |      0 |        0
+   4 | DDD       | DD       | D        |      0 |        0
+   5 | EEE       | EE       | E        |      0 |        0
+   6 | FFF       | FF       | F        |      0 |        0
+   7 | GGG       | GG       | G        |      0 |        0
+   8 | HHH       | HH       | H        |      0 |        0
+   9 | III       | II       | I        |      0 |        0
+  10 | JJJ       | JJ       | J        |      0 |        0
+(10 rows)
+
+INSERT 4636004 1
+INSERT 4636005 1
+INSERT 4636006 1
+INSERT 4636007 1
+INSERT 4636008 1
+INSERT 4636009 1
+INSERT 4636010 1
+ locid | name
+-------+------
+     1 | ISR
+     2 | MX
+     3 | BEL
+     4 | UK
+     5 | USA
+     6 | RUS
+     7 | GER
+(7 rows)
+
+DELETE 1
+ locid | name
+-------+------
+     1 | ISR
+     2 | MX
+     4 | UK
+     5 | USA
+     6 | RUS
+     7 | GER
+(6 rows)
+
+INSERT 4636011 1
+INSERT 4636014 1
+INSERT 4636017 1
+INSERT 4636020 1
+ pid
+-----
+   1
+  10
+(2 rows)
+
+INSERT 4636025 1
+INSERT 4636030 1
+INSERT 4636035 1
+INSERT 4636040 1
+INSERT 4636047 1
+ pid
+-----
+   1
+   8
+  10
+(3 rows)
+
+ pid | firstname | lastname | nickname | rating | inactive
+-----+-----------+----------+----------+--------+----------
+   1 | AAA       | AA       | A        |      2 |        0
+   2 | BBB       | BB       | B        |     -1 |        0
+  10 | JJJ       | JJ       | J        |      2 |        0
+   3 | CCC       | CC       | C        |     -1 |        0
+   4 | DDD       | DD       | D        |      1 |        0
+   6 | FFF       | FF       | F        |     -1 |        0
+   7 | GGG       | GG       | G        |      1 |        0
+   5 | EEE       | EE       | E        |     -5 |        1
+   8 | HHH       | HH       | H        |      2 |        0
+   9 | III       | II       | I        |      0 |        0
+(10 rows)
+
+psql:test.sql:57: ERROR:  Inactive players may not play
+ reactivate
+------------
+
+(1 row)
+
+ pid | firstname | lastname | nickname | rating | inactive
+-----+-----------+----------+----------+--------+----------
+   1 | AAA       | AA       | A        |      2 |        0
+   2 | BBB       | BB       | B        |     -1 |        0
+  10 | JJJ       | JJ       | J        |      2 |        0
+   3 | CCC       | CC       | C        |     -1 |        0
+   4 | DDD       | DD       | D        |      1 |        0
+   6 | FFF       | FF       | F        |     -1 |        0
+   7 | GGG       | GG       | G        |      1 |        0
+   8 | HHH       | HH       | H        |      2 |        0
+   9 | III       | II       | I        |      0 |        0
+   5 | EEE       | EE       | E        |     -3 |        1
+(10 rows)
+
+ reactivate
+------------
+
+(1 row)
+
+ reactivate
+------------
+
+(1 row)
+
+INSERT 4636072 1
+ pid | firstname | lastname | nickname | rating | inactive
+-----+-----------+----------+----------+--------+----------
+   1 | AAA       | AA       | A        |      2 |        0
+   2 | BBB       | BB       | B        |     -1 |        0
+  10 | JJJ       | JJ       | J        |      2 |        0
+   3 | CCC       | CC       | C        |     -1 |        0
+   4 | DDD       | DD       | D        |      1 |        0
+   6 | FFF       | FF       | F        |     -1 |        0
+   7 | GGG       | GG       | G        |      1 |        0
+   9 | III       | II       | I        |      0 |        0
+   8 | HHH       | HH       | H        |      3 |        0
+   5 | EEE       | EE       | E        |      0 |        0
+(10 rows)
+
+ pid
+-----
+   8
+(1 row)
+
+ locid | name
+-------+------
+     1 | ISR
+     2 | MX
+     4 | UK
+     5 | USA
+     6 | RUS
+     7 | GER
+(6 rows)
+
+DELETE 6
+ locid |       name
+-------+------------------
+     8 | Always Available
+(1 row)
+
+DROP TRIGGER
+DROP TRIGGER
+DROP TRIGGER
+DROP TRIGGER
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
